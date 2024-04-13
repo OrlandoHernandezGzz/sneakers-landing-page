@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__left">
+          <img
+            src="images/icon-menu.svg"
+            alt="icon hamburger"
+            class="header__hamburger"
+          />
+
+          <img src="images/logo.svg" alt="logo" class="header__logo" />
+
+          <nav class="header__nav">
+            <a href="#" class="header__link">Collections</a>
+            <a href="#" class="header__link">Men</a>
+            <a href="#" class="header__link">Women</a>
+            <a href="#" class="header__link">About</a>
+            <a href="#" class="header__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="header__right">
+          <img
+            src="images/icon-cart.svg"
+            alt="icon cart"
+            class="header__cart"
+          />
+
+          <img
+            src="images/image-avatar.png"
+            alt="avatar"
+            class="header__avatar"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery">
+        <div class="gallery__picture">
+          <img
+            src="images/image-product-1.jpg"
+            alt="product1"
+            class="gallery__img"
+          />
+
+          <button class="gallery__btn gallery__btn--previous">
+            <img src="images/icon-previous.svg" alt="previous" />
+          </button>
+
+          <button class="gallery__btn gallery__btn--next">
+            <img src="images/icon-next.svg" alt="previous" />
+          </button>
+        </div>
+
+        <div class="gallery__more">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="thumbnail"
+            class="gallery__images"
+          />
+
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="thumbnail"
+            class="gallery__images"
+          />
+
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="thumbnail"
+            class="gallery__images"
+          />
+
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="thumbnail"
+            class="gallery__images"
+          />
+        </div>
+      </section>
+
+      <section class="product container">
+        <div class="product__description">
+          <p class="product__subtitle">Sneaker Company</p>
+          <h2 class="product__title">Fall Limited Edition Sneakers</h2>
+          <p class="product__paragraph">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+
+        <div class="product__prices">
+          <div class="product__descount">
+            <h2 class="product__descountprice">$125.00</h2>
+            <span class="product__percent">50%</span>
+          </div>
+
+          <p class="product__originalprice">$250.00</p>
+        </div>
+
+        <div class="checkout">
+          <div class="checkout__cta">
+            <button class="checkout__btn">
+              <img src="images/icon-minus.svg" alt="minus icon" />
+            </button>
+            <span class="checkout__quantity">0</span>
+            <button type="button" class="checkout__btn">
+              <img src="images/icon-plus.svg" alt="minus icon" />
+            </button>
+          </div>
+
+          <button type="button" class="checkout__cart">
+            <img
+              src="images/icon-cart-white.svg"
+              alt="cart"
+              class="checkout__icon"
+            />
+            <p class="checkout__add">Add to cart</p>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
